@@ -5,7 +5,7 @@ import PokemonDetails from './components/PokemonDetails';
 
 function App() {
 
-  cosnt[selectedPokemon, setSelectedpokemon] = useState();
+  const [selectedPokemon, setSelectedpokemon] = useState();
 
 
   return (
@@ -18,7 +18,7 @@ function App() {
       )}
 
       <h2>Lista de Pokemons</h2>
-      <PokemonList />
+      <PokemonList selectPokemon={setSelectedpokemon}/>
     </>
   )
 }
